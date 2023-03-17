@@ -17,7 +17,7 @@ int main(void)
 
 		if (num == 9)
 		{
-			putchar('$');
+			continue;
 		}
 		else
 		{
@@ -25,6 +25,6 @@ int main(void)
 			putchar(' ');
 		}
 	}
-
+	putchar(' ');
 	return (0);
 }
