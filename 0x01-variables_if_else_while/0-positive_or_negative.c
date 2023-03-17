@@ -1,4 +1,4 @@
-#include<stdio.sh>
+#include<stdio.h>
 #include<time.h>
 /**
  * more header goes here
