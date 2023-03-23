@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * more_number - print numbers 0 -14
+ * more_numbers- print numbers 0 -14
  * 10 times
  */
 
-void more_number(void)
+void more_numbers(void)
 {
 	int i, j;
 
