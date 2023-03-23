@@ -1,4 +1,4 @@
-# include "main.h"
+#include "main.h"
 /**
  * _isdigit - check if a character is between 0 - 9
  *
@@ -8,5 +8,5 @@
 
 int _isdigit(int c)
 {
-	return (c >= '0' && <= '9');
+	return (c >= '0' && c <= '9');
 }
