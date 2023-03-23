@@ -13,9 +13,9 @@ int main(void)
 	while (count < 4000000)
 	{
 		count = x + y;
-		x = b;
+		x = y;
 		y = count;
-		if (next % 2 == 0)
+		if (count % 2 == 0)
 			sum += count;
 	}
 	printf("%d\n", sum);
