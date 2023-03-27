@@ -1,7 +1,7 @@
 #include <stdio.h>
 # include "main.h"
 /**
- * print_arry - print element in array
+ * print_array - print element in array
  * seperated by comma
  * @a: array tobe printed
  * @n: number of element to print
