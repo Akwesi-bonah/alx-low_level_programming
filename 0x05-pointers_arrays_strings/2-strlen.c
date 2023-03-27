@@ -1,8 +1,9 @@
 # include "main.h"
 /**
  * _strlen - return lent of a string
- * @s : stirng to check
- * Return : the number of var a
+ * @s: string to check
+ *
+ * Return: the lenght of the string
  */
 
 int _strlen(char *s)
