@@ -2,6 +2,7 @@
 /**
  * _strlen - return lent of a string
  * @s : stirng to check
+ * Return : the number of var a
  */
 
 int _strlen(char *s)
