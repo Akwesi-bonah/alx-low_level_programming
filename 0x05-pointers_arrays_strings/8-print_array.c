@@ -1,3 +1,4 @@
+#include <stdio.h>
 # include "main.h"
 /**
  * print_arry - print element in array
