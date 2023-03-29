@@ -2,9 +2,9 @@
 /**
  * _strcat - join two string together
  * @src: source to append
- * @dest: source to add 
+ * @dest: source to add
  *
- * Retur: The result
+ * Return: The result
  */
 
 char *_strcat(char *dest, char *src)
