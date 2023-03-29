@@ -1,32 +1,31 @@
-# include "main.h"
-/**
- * _strncat - copies string
- * @dest: distination
- * @src: source
- * @n: number of byte
- *
- * Return: dest
- */
+#include "main.h"
 
+/**
+ * _strncat - concatenates n bytes from a string to another
+ * @dest: destination string
+ * @src: source string
+ * @n: number of bytes of str to concatenate
+ *
+ * Return: a pointer to the resulting string dest
+ */
 char *_strncat(char *dest, char *src, int n)
 {
-	int i ;
+	int i, j;
 
 	i = 0;
+	j = 0;
 
-	while (i < n && src[i] != '\0')
-	{
-		dest[i] = src[i];
+	while (dest[i] != '\0')
 		i++;
+
+	while (src[j] != '\0' && j < n)
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
 	}
 
-	while (i < n)
-	{
-		dest[i] = '\0';
-		i++;
-	}
+	dest[i] = '\0';
 
-	return (dest)
+	return (dest);
 }
-
-
