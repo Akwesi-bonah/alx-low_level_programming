@@ -1,4 +1,4 @@
-i include "main.h"
+#include "main.h"
 /**
  * string_toupper - change a string from lowercase top uppercase
  * @s: string to change
