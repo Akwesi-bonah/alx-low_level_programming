@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _strncat - concatenates string 
+ * _strncat - concatenates string
  * @dest: destination string
  * @src: source string
- * @n: number of bytes 
+ * @n: number of bytes
  *
  * Return: dest
  */
