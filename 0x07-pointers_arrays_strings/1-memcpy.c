@@ -1,11 +1,11 @@
-#include "main.h"
+# include "main.h"
 /**
- * _memcpy - copy character from src to dest
+ * _memcpy - copy from one location to another
  * @dest: destination
  * @src: source
  * @n: number of byte
  *
- * Retrun: dest
+ * Return: dest
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
@@ -13,7 +13,6 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	unsigned int i;
 
 	for (i = 0; i < n; i++)
-
 	{
 		dest[i] = src[i];
 	}
