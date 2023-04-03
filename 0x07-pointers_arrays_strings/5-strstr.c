@@ -1,4 +1,5 @@
 # include "main.h"
+# include <stdio.h>
 /**
  * _strstr - find substring
  * @haystack: string to search from
