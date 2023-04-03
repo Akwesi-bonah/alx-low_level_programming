@@ -3,7 +3,9 @@
  * _memcpy - copy character from src to dest
  * @dest: destination
  * @src: source
- * @n: number os by
+ * @n: number of byte
+ *
+ * Retrun: dest
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
