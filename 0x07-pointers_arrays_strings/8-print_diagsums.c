@@ -1,8 +1,8 @@
 # include <stdio.h>
 # include "main.h"
 /**
- * print_diagsums - print diagonal sum 
- * @a: sqaure matrix 
+ * print_diagsums - print diagonal sum
+ * @a: sqaure matrix
  * @size: matrix size
  */
 
