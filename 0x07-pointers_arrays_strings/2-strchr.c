@@ -7,7 +7,7 @@
  * Return: c if found else NUll
  */
 
-char *strchr(char *s, char c)
+char *_strchr(char *s, char c)
 {
 	int x;
 
@@ -16,7 +16,7 @@ char *strchr(char *s, char c)
 		x = *s++;
 		if (x == c)
 		{
-			return (s -1);
+			return (s - 1);
 		}
 
 		if (a == 0)
