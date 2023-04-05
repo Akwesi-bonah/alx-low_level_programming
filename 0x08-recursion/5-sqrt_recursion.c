@@ -7,6 +7,8 @@
  */
 
 
+int checker(int n, int a);
+
 int _sqrt_recursion(int n)
 {
 	return (checker(n, 1));
