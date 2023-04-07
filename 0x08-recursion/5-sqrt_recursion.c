@@ -1,15 +1,8 @@
 # include "main.h"
 
-/**
- * checker - check th number
- * Description: sqaure root of number
- * @n: int
- * @a: int for checker
- *
- * Return: checker
- */
 
 int checker(int n, int a);
+
 
 /**
  * _sqrt_recursion - print square root of a number
@@ -22,7 +15,13 @@ int _sqrt_recursion(int n)
 {
 	return (checker(n, 1));
 }
-
+/**
+ * cheaker - check the number 
+ * @n: int
+ * @a: int for checking
+ *
+ * Return: checker result
+ */
 
 int checker(int n, int a)
 {
