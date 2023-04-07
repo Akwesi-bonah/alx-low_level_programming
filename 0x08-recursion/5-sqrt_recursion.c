@@ -16,7 +16,7 @@ int _sqrt_recursion(int n)
 	return (checker(n, 1));
 }
 /**
- * cheaker - check the number 
+ * checker - check the number
  * @n: int
  * @a: int for checking
  *

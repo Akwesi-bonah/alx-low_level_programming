@@ -13,7 +13,7 @@ int _strlen_recursion(char *s)
 		return (0);
 	}
 
-	return (1 + _strlen_recursion(s++));
+	return (1 + _strlen_recursion(++s));
 }
 /**
  * cmp - compare in reverse
@@ -23,11 +23,11 @@ int _strlen_recursion(char *s)
  * Return: i if equal, if less 1 else 0
  */
 
-int cmp(char *s, i)
+int cmp(char *s, int i)
 {
 	if (*s == *(s + i))
 	{
-		return (camp(s + 1, i - 2));
+		return (cmp(s + 1, i - 2));
 	}
 	if (i < 1)
 	{
