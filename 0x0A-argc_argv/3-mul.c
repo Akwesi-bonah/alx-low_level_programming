@@ -38,7 +38,7 @@ int _atoi(char *s)
 
 int main(int argc, char *argv[])
 {
-	int x, y;
+
 
 	if (argc < 3 || argc > 3)
 	{
