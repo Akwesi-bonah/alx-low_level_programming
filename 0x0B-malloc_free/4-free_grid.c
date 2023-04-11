@@ -1,17 +1,16 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * free_grid - remaove allocated memory
- * @grid: array pointer
- * @height: array size
- *
- * Return: 0
+ * free_grid - free aloocated space
+ * @grid: pointer array
+ * @height: array
  */
 
 void free_grid(int **grid, int height)
 {
 	int i;
-	if (grid == NULL || height == 0)
+
+	if (grid == NULL || height <= 0)
 	{
 		return;
 	}
