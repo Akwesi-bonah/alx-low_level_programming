@@ -27,8 +27,8 @@ char *str_concat(char *s1, char *s2)
 			s2_len++;
 		}
 	}
-	len = s1_len + s2_len + 1;
-	cat_string = (char *)malloc(sizeof(char) * len);
+	len = s1_len + s2_len;
+	cat_string = (char *)malloc(sizeof(char) * len + 1);
 
 	if (cat_string == NULL)
 	{
