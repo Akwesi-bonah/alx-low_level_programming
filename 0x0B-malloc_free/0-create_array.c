@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdlib>
+#include <stdlib.h>
 /**
  * create_array - create array of a giving size
  * @size: size of the array to be created
