@@ -8,7 +8,7 @@
  * Return: copy of string
  */
 
-char _strdup(char *str)
+char *_strdup(char *str)
 {
 	char *new_str;
 	int i;
