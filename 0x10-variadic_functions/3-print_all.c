@@ -63,14 +63,17 @@ void print_all(const char * const format, ...)
 
 	va_start(ptr, format);
 
-	while (format[i] != '\0' &&  j < 4)
+	while (format[i] != '\0')
 	{
-		if (format[i] == *(funcs[j].chr))
+		while (j < 4)
 		{
-			funcs[j].va_func(ptr);
-			printf(", ");
+			if (format[i] == *(funcs[j].chr))
+			{
+				funcs[j].va_func(ptr);
+				printf(", ");
+			}
+			j++;
 		}
-		j++;
 		i++;
 	}
 
