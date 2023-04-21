@@ -48,11 +48,16 @@ void _string(va_list sp)
 		printf("(nil)");
 	printf("%s", a);
 }
+/**
+ * print_all - prints any argument, follewd by new line
+ * @format: argument type
+ */
 
 void print_all(const char * const format, ...)
 {
 	va_list ptr;
 	int i = 0, j = 0;
+	char *spr = "";
 
 	d_t funcs[] = {
 		{"c", _char},
@@ -63,16 +68,16 @@ void print_all(const char * const format, ...)
 
 	va_start(ptr, format);
 
-	while (format[i] != '\0')
+	while (format && (*(format + i)))
 	{
-		while (j < 4)
-		{
-			if (format[i] == *(funcs[j].chr))
-			{
-				funcs[j].va_func(ptr);
-				printf(", ");
-			}
+		j = 0;
+		while (j < 4 && (*(format + 1) != *(funcs[j].chr)))
 			j++;
+		if (j < 4)
+		{
+			printf("%s", spr);
+			funcs[j].va_func(ptr);
+			spr = ", ";
 		}
 		i++;
 	}
