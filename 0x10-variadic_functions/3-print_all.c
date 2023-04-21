@@ -43,7 +43,7 @@ void _float(va_list sp)
 void _string(va_list sp)
 {
 	char *a = va_arg(sp, char *);
-	
+	/* if null printt nil */
 	if (a == NULL)
 		printf("(nil)");
 	printf("%s", a);
@@ -51,4 +51,31 @@ void _string(va_list sp)
 
 void print_all(const char * const format, ...)
 {
+	va_list ptr;
+	int i = 0, j = 0;
+
+	d_t funcs[] = {
+		{"c", _char},
+		{"i", _int},
+		{"f", _float},
+		{"s", _string}
+	};
+
+	va_start(ptr, format);
+
+	while (format[i] != '\0' &&  j < 4)
+	{
+		if (format[i] == *(funcs[j].chr))
+		{
+			funcs[j].va_func(ptr);
+			printf(", ");
+		}
+		j++;
+		i++;
+	}
+
+	printf("\n");
+	va_end(ptr);
 }
+
+

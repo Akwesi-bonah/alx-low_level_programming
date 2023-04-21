@@ -13,7 +13,7 @@ typedef struct variadic_function
 {
 	char *chr;
 	void (*va_func)(va_list sp);
-} data_type;
+} d_t;
 
 void _string(va_list sp);
 void _char(va_list sp);
