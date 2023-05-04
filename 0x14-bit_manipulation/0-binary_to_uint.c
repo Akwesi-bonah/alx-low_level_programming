@@ -20,7 +20,7 @@ int _strlen(const char *s)
 }
 
 /**
- * binary_to_unit - convert binary numbers to unsigned integers
+ * binary_to_uint - convert binary numbers to unsigned integers
  * @b: pointer to character
  *
  * Return: converted string
