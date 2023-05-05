@@ -29,7 +29,7 @@ int _strlen(const char *s)
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int decimal = 0;
-	int length = _strlen(b);
+	unsigned int length = _strlen(b);
 	int i;
 
 	for (i = length - 1; i >= 0; i--)
