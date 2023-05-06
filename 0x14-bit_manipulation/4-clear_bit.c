@@ -8,7 +8,7 @@
  * Return: index value of bit else -1
  */
 
-int clear_bit(unsigned long int *n, unsigned int index)
+int clear_bit(unsined long int *n, unsigned int index)
 {
 	unsigned long int a = ULONG_MAX - 1;
 	unsigned int i;
@@ -23,8 +23,9 @@ int clear_bit(unsigned long int *n, unsigned int index)
 		a = a << 1;
 		_bit(&a, 0);
 	}
-
+	
 	*n = a & *n;
+
 	return (1);
 }
 
