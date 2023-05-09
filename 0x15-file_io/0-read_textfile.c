@@ -29,7 +29,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	words = malloc(letters);
 	if (words == NULL)
 	{
-		close(words);
+		close(count);
 		return (0);
 	}
 
