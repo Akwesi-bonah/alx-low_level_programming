@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * read_textfile - a function that reads a text file and prints standard output
@@ -10,8 +11,7 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t reader; writer;
-	int count;
+	ssize_t reader, writer, count;
 	char *words;
 
 	if (filename == NULL)

@@ -8,13 +8,13 @@
 
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int i = 0, reader, writer;
+	int i, reader, writer;
 
 	if (filename == NULL)
 		return (-1);
 
 	reader = open(filename, O_WRONLY | O_APPEND);
-	if (fd == -1)
+	if (reader == -1)
 		return (-1);
 
 	if (text_content == NULL)
@@ -24,12 +24,10 @@ int append_text_to_file(const char *filename, char *text_content)
 	{
 		;
 	}
-	
-       writer	= write(fd, text_content, i);
-       close(fd);
-       
-       if (m == -1)
-		return (-1);
 
+	writer	= write(reader, text_content, i);
+	close(reader);
+	if (writer == -1)
+		return (-1);
 	return (1);
 }
