@@ -32,3 +32,25 @@ hash_node_t *add_node_hash(hash_node_t **h, const char *key, const char *value)
 	}
 	return (*h);
 }
+
+/**
+ * hash_table_set - adds a hash (key, value) to a given hash table
+ *
+ * @ht: pointer to the hash table
+ * @key: key of the hash
+ * @value: value to store
+ * Return: 1 if successes, 0 if fails
+ */
+int hash_table_set(hash_table_t *ht, const char *key, const char *value)
+{
+	unsigned long int index;
+	hash_node_t *new_node;
+
+	if (ht == NULL || key == NULL || *key == '\0')
+		return (0);
+	index = key_index((unsigned char *)key, ht->size);
+	new_node = add_node_hash(&(ht->array[index]), key, value);
+	if (new_node == NULL)
+		return (0);
+	return (1);
+}
